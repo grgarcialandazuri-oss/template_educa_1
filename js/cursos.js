@@ -1,0 +1,12 @@
+document.addEventListener("DOMContentLoaded", () => {
+  const cards = document.querySelectorAll(".card");
+
+  cards.forEach(card => {
+    card.addEventListener("click", () => {
+      const curso = card.querySelector("h6");
+      if (curso) {
+        alert("📘 Curso seleccionado: " + curso.textContent);
+      }
+    });
+  });
+});
